@@ -1,0 +1,118 @@
+{
+ "name": "fire-and-ice",
+ "title": "Fire & Ice (Graftgold for Renegade, 1993; Archimedes conversion by Paul Chapman, 1995)",
+ "platform": "acorn-archimedes",
+ "doc": "A recipe: how to turn a user's own copy of the game into a native executable. It holds no game data: the inputs are recognised by content (see $SS/tools/weave.py). Two discs (TOSEC's 'Fire & Ice (1995)(Renegade)(Disk 1 of 2).adf' and 'Disk 2 of 2'), merged into one !Fire_Ice. The game is protected (Gordian Lock: a check of the disc's last track, which a disc image can't hold); recomp/game.c takes the check as passed.",
+ "inputs": {
+  "containers": {},
+  "formats": [
+   "adf",
+   "zip"
+  ]
+ },
+ "discs": [
+  {
+   "name": "disk1",
+   "title": "Disk 1: !Fire_Ice (!Run, FreeMem, PromptDisc, Intro, Fire - the game, encrypted) and data.G.GRAPHICS, data.I, data.M.INFO",
+   "known_images": [
+    "e07c073045868e032a231b5a831da14e574acb64f0e7e3dfec7ed8733663327d"
+   ],
+   "key_files": {
+    "!Fire_Ice/!Run": "25d7ca5644e851bfaef59f333cc41d35fddf9febdd28139f46f6c1c06e4adf70",
+    "!Fire_Ice/Fire": "9dccf9b6d87f92b8ed7a21489f5128f87a830aa52b1eeb0e7982d537056d3fbe",
+    "!Fire_Ice/FreeMem": "01cd4e191349861c3f73a3ad787395a9afa60bb7d3682323b9155c1d0ba2b4c3",
+    "!Fire_Ice/Intro": "0b013be0f55d412facda55812d2a76b287557cc242e724766538d0081a126ba8",
+    "!Fire_Ice/PromptDisc": "b4832384105f29c561c2d55b1f7c1460b3c9d85e20b0a7e4a735f4314c10024d",
+    "!Fire_Ice/data/G/GRAPHICS": "3b1e88445999a6b1e64bc91a70b9d218d17615371de163e84cd923b3bb8f8e1a",
+    "!Fire_Ice/data/I/COYOTE": "b377d8682157447707b39af84a8e2ed03210afa9b73d99b0ed59791d7bc695cd",
+    "!Fire_Ice/data/I/FIREICE": "4db11dbe6eaa5af4391fc8457c252482227bd74190727290fe24a72f05c4cf3e",
+    "!Fire_Ice/data/I/PANEL": "17b6d3ac6cfd0f678bec7cd7e226f580914518eeda730ac71777f9d13d4a8295",
+    "!Fire_Ice/data/M/INFO": "271a1326d302ba0cfd5641247d2992c76f140e1988644475408e4880fce62bb9"
+   },
+   "game_dirs": [
+    "!Fire_Ice"
+   ]
+  },
+  {
+   "name": "disk2",
+   "title": "Disk 2: !Fire_Ice.data (the worlds' graphics, sprites, maps and music: A, C, G, P, S; the high score table, M.HS)",
+   "known_images": [
+    "9ba2768e9a6cb239f09e61d2c68d8e1b410adb5d82cab2788766029a38bf9e2a"
+   ],
+   "key_files": {
+    "!Fire_Ice/data/A/CASTLE": "7cfc6cce71a4305cc36b90d8f990d81b2f69776cb0f64a6c8b0486aa637098b9",
+    "!Fire_Ice/data/A/FOREST": "28378790061248ad8bc5c55c7babae0714e7b3863adfdedca95f872814be3015",
+    "!Fire_Ice/data/A/HOT": "5e42eb069637b117ceac049abc145fb58741a02b10efcd6b2b43fbe901bfadf0",
+    "!Fire_Ice/data/A/INSIDE": "95084f31924aa385cd2061a2eb1c8fd6bb326f79f0ddef7a11e6e0d59772e53e",
+    "!Fire_Ice/data/A/ROCK": "95084f31924aa385cd2061a2eb1c8fd6bb326f79f0ddef7a11e6e0d59772e53e",
+    "!Fire_Ice/data/A/SEA": "95084f31924aa385cd2061a2eb1c8fd6bb326f79f0ddef7a11e6e0d59772e53e",
+    "!Fire_Ice/data/A/SNOW": "20ded75d7ae35580956e6f0efd5f58365e18d6612f9811ad563bc85debc647a2",
+    "!Fire_Ice/data/A/TITLES": "309d9b416d7d8b4b22f73bc9104d1fe298fec7ea0468603854108ae274d32292",
+    "!Fire_Ice/data/C/CASTLE": "0e024e561f463b510b6fe0a0229923aecbe38bf3f3153c3d91c045f0ffd3b16a",
+    "!Fire_Ice/data/C/FOREST": "693c541e2d847599ddacb8400268fa2c2bab191fdb09c20b5a45b076056aada6",
+    "!Fire_Ice/data/C/HOT": "1429bde1d3eab562c6a9ada3c12f20b815b5f4a3aef51f2458945a8cae1529da",
+    "!Fire_Ice/data/C/INSIDE": "851c1116bd661fb12a5b7329bd915673a81c9ef33e75b7337bd038f7fe0d57dc",
+    "!Fire_Ice/data/C/ROCK": "13d4caf840672e294a0774e5390465f137c74f37aaabf8cb19cbe32ec31d1b5f",
+    "!Fire_Ice/data/C/SEA": "bc6508acd914375a5e29f768694d358a81753faad9022a2d940787dbc9cafe6b",
+    "!Fire_Ice/data/C/TITLES": "c34df8e2313933553ec4c8f6730715aedb3afa89f405553a51716dd88ff89db0",
+    "!Fire_Ice/data/G/CASTLE": "d1d58a8473b2ff48fe5cfc834e8dc817e7caeaeac5b3c44e8038d8fe0e9744df",
+    "!Fire_Ice/data/G/FOREST": "ae6acc2bafea05c6c975a79f87eda4c3f1d3acb2c1822c94bb710d1bf9e8655a",
+    "!Fire_Ice/data/G/HOT": "c13511b0b403b760b5a6fd4d9be00baa4e42ad894c05f7f9677b26b9e103e1a8",
+    "!Fire_Ice/data/G/INSIDE": "224eb85528e655089e17eeeffcf6d801097b6981bc36be7dd67703ec9a05df5f",
+    "!Fire_Ice/data/G/ROCK": "7569fe66440d74fc6b14ada0de7ae10deabfa695b08c6c3e2d2c0616ff906e70",
+    "!Fire_Ice/data/G/SEA": "ae1d68f231217921e72df54e386e92ee0dfd4a9d20c3b8ac86a0960e21b1a2eb",
+    "!Fire_Ice/data/G/SNOW": "d3983d87c90817bd002aa218709898dae8355ecfb71e2f5fb60dde0eedfb90f8",
+    "!Fire_Ice/data/G/TITLES": "9510891cf0ca4f337615bc387a07ead08c14581e114d1c7a9cd1216a5ad04efa",
+    "!Fire_Ice/data/P/CASTLE1": "ca58824fbdc43223980181532c116dbc949651db7e4043348ef55f62c93e5cf1",
+    "!Fire_Ice/data/P/CASTLE2": "e4f19d9e8faf2eb021d47d848f5f1675c885c2fe3b4e39d2d62f00e618745668",
+    "!Fire_Ice/data/P/CASTLE3": "0f5faf519010d1d1516ac65e54bb85465bc22d5030594b1a2e4d47a6885b4e6f",
+    "!Fire_Ice/data/P/CASTLE4": "9241204cbad31176961d1a23792a54ff46c197e006e935ba8171d0ca6fe4c3b9",
+    "!Fire_Ice/data/P/CASTLE5": "f5dfb76efd63714511f34d854dd824a8205616fa5884ff33b1c934740983d5b0",
+    "!Fire_Ice/data/P/FOREST1": "1d6afa0b0d313db1cde1442b7cda81362dfda5a0d6654a18348af765ecbb3c25",
+    "!Fire_Ice/data/P/FOREST2": "79520f12aa8f8d6ea9521d4779dae1e91794d90fbfa0ce1aa5a8ccedc76de958",
+    "!Fire_Ice/data/P/FOREST3": "4992e58b00796748bde8466ae583012a56acc960d8b27466656d8545b01f2954",
+    "!Fire_Ice/data/P/HOT1": "4bc28c9bd5e71a5f468a040daa0c40187e6f28e83d5f9752fdd0c4a488b06c30",
+    "!Fire_Ice/data/P/HOT2": "65bc2776026f2fb75b95b7854917b52bbb17b45fc657a2464d50c45efabe48d5",
+    "!Fire_Ice/data/P/INSIDE1": "530f860f6560cf38bf69f5d69621ca6b54503541809855d609507176cf8be713",
+    "!Fire_Ice/data/P/INSIDE2": "6020c7d6cbfc03b15457c8e1b4f0902944d98c455c3b0108f74321bdcffb6ca5",
+    "!Fire_Ice/data/P/INSIDE3": "df57c5825079efcf48a0e3d77f09f47fe6223744d83d2c4d1a27c2d8801c103a",
+    "!Fire_Ice/data/P/INSIDE4": "2a67a4873ff379c71c45534e6a0c76fa79c737aa882f6a1a3aafd36c19943457",
+    "!Fire_Ice/data/P/INSIDE5": "8e1d1e4ce2394209ee3af5574f20124c165b08131885c28383d93929286d9b9c",
+    "!Fire_Ice/data/P/SEA1": "d60005cbdc9ede27e432cf5fca0665e989f91e51e15820aa58ec1677894a0d8a",
+    "!Fire_Ice/data/P/SEA2": "7d25989597ae9e8bf2d5d488670b3c99820acc19674ca7b7d705acf78b715e40",
+    "!Fire_Ice/data/P/SEA3": "00b2ec73e9ea888e6d85b9d25ef0982470273218f9fa7224e8d286d6aa4639c8",
+    "!Fire_Ice/data/P/SEA4": "f91db9faae3936a91fe31465fc72f2cfc9d88ea865e4f34b5c390b6aa1ae77e8",
+    "!Fire_Ice/data/P/SEA5": "e5f4c8e46cbdcb80b179747a040e3d0fc685c9239131ed555d765b490c43a79d",
+    "!Fire_Ice/data/S/CASTLE": "c42d80c7c1710816572d38d21990fab0b7826a5de5f191baedf5fe635b6b2c9e",
+    "!Fire_Ice/data/S/FOREST": "8c735145e09448bf7238871013b240bcc74974f914526f855b7a627d5c21005e",
+    "!Fire_Ice/data/S/HOT": "0544dd9ac8956acb8cd274234c26a4334bc210e211f7a8f3c5a91b3ef24023ed",
+    "!Fire_Ice/data/S/INSIDE": "70ac4a23a8139319fee40cd7884d64417258c0a5febded5469c16a88b83c63f5",
+    "!Fire_Ice/data/S/ROCK": "bb8fc5c18d5bdccb813df99e413d270983208ae35316032bf617564d9036b445",
+    "!Fire_Ice/data/S/SEA": "edf0aa6e36d0af05c28c8b0a6ecbaeccb37e0597e71c192dd671181235e0fec9",
+    "!Fire_Ice/data/S/SNOW": "1697a549f57a874f1c5ba17a290fc46a81ee5454448c3b5293f63815ae184c84",
+    "!Fire_Ice/data/S/TITLES": "cfaaaaaac27f675510418a80770ca5ffc0b82c046f94791b05c16fb6ec9fbcf6"
+   },
+   "game_dirs": [
+    "!Fire_Ice"
+   ]
+  }
+ ],
+ "build": [
+  "python3 -I \"$WEAVE\" extract . INPUTS",
+  "make -C recomp regen",
+  "make -C recomp"
+ ],
+ "output": "recomp/fireice",
+ "requires": {
+  "superspider": "~/stuff/superspider, or $SUPERSPIDER (dune build): analyse, gen, tools/weave.py",
+  "libroger": "~/stuff/libroger, or make ROGER=... (tools/unpack: its interpreter as an unpacker)",
+  "host": [
+   "python3",
+   "ocaml + dune",
+   "gcc",
+   "SDL3 (pkg-config sdl3)",
+   "libjpeg"
+  ]
+ },
+ "run": "cd recomp && ./fireice"
+}
